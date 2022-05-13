@@ -16,15 +16,21 @@ body{
     height: 100vh;
 }
 
+.row{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid green;     */
+
+}
 header .container{
     border: 2px solid red;
-    width: 90%;
+    width: 100%;
     display: flex;
     margin: auto;
 
     justify-content: center;
     align-items: center;
-    max-width: 960px;
+    max-width: 1100px;
 }
 
 header .pre-menu{
@@ -36,7 +42,7 @@ header .pre-menu{
     /* padding-bottom: 10px; */
     margin: auto;
 
-    max-width: 960px;
+    max-width: 1100px;
 
 }
 
@@ -59,6 +65,7 @@ header nav ul{
     border: 2px solid rgb(0, 255, 55);
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 nav ul li{
@@ -69,7 +76,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 0.8rem;
     padding: 28px 4px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 nav ul li img{
@@ -80,12 +87,13 @@ nav ul li img{
 
 section.conteudo{
     border: 2px solid red;
-    height: 60vh;
-    max-width: 960px;
+    max-width: 1100px;
     width: 90%;
     display: flex;
+    justify-content: center;
     margin: auto;
     position: relative;
+   
 }
 
 section .conteudo-video{
@@ -95,13 +103,134 @@ section .conteudo-video{
     margin: auto;
 }
 
-section .conteudo-banners img{
+section .conteudo-banners{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.centroeste{
+    border: 2px solid blue;
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
+    background-image: url("../img/banners/centroeste/banner-centroeste.png");
 }
+
+.centroeste .box-title{
+    border: 2px solid blue;
+    width: 100%;
+    height: 7vh;
+}
+
+
+    .h2-regiao{
+        font-size: 1.3rem;
+        color: #fa6f19;
+    }
+
+    .p-descricao{
+        font-size: 0.9rem;
+        color: #ffff;
+        font-weight: 800;
+    }
+
+.conteudo-banners img{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    border: 2px solid blue;
+    padding-top: 20px;
+}
+
+
+.conteudo-carousell{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+    .d-block{
+        width: 90vw;
+        height: 60vh;
+    }
 
 video{
     width: 100%;
     height: 60vh;
 }
+
+
+/* CARDÁPIO */
+
+.col-md{
+    border: 2px solid blue;
+    width: 200px;
+    height: 50vh;
+    position: relative;
+    /* display: flex; */
+}
+
+.box-title{
+    border: 2px solid blue;
+    width: 100%;
+    height: 10vh;
+}
+
+.box-img{
+    border: 2px solid blue;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+
+}
+
+.box-img img{
+    position: absolute;
+    width: 95%;
+    height: 40vh;
+    /* padding-bottom: 30px; */
+    margin-top: -40px;
+    border: 2px solid blue;
+
+}
+
+.col-md-3{
+    border: 2px solid blue;
+    width: 350px;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+    .card{
+        border: 2px solid rgb(234, 0, 255);
+        width: 300px;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+
+    .card-title{
+        border: 2px solid rgb(0, 255, 42);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        font-size: 1rem;
+
+    }
+
+    .card-text{
+        border: 2px solid blue;
+        position: relative;
+        font-size: 0.6rem;
+        height: 30vh;
+        padding: 10px;
+    }
